@@ -1,0 +1,98 @@
+/**
+    Restaurante Baratie Gourmet - Estilos Principais
+ */
+
+/* ===== BASE ===== */
+@import './base/_reset.css';
+@import './base/_variables.css';
+@import './base/_typography.css';
+
+/* ===== THEMES ===== */
+@import './themes/_sanji-theme.css';
+
+/* ===== UTILITIES ===== */
+@import './utilities/_helpers.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    background-color: var(--color-gray-light);
+    padding: 20px 30px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo-marca {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 55px;
+}
+
+.titulo {
+    color: var(--color-primary);
+    font-family: var(--font-heading);
+}
+
+.navBar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 2000px;
+    top: 0;
+    padding-top: 18px;
+    background-color: var(--color-light);
+    font-size: var(--font-primary);
+    transition: left 0.5s ease-in-out;
+    height: 100vh;
+    z-index: 1000;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1) ;
+}
+
+.navBar.open {
+    left: 77.5%;
+}
+
+.sessoes-navBar-h2 {
+    cursor: pointer;
+    padding: 20px 30px;
+}
+
+.sessoes-navBar {
+    cursor: pointer;
+    padding: 20px 30px;
+}
+
+.sessoes-navBar:hover {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    transition: 0.5s ease-in-out;
+}
+
+.configs {
+    cursor: pointer;
+    margin-left: auto;
+    transition: transform 0.5s ease-in-out;
+}
+
+.configs.rotating {
+    transform: rotate(360deg);
+}
+
+.buttonSettings {
+    width: 40px;
+}

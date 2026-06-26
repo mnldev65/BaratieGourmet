@@ -1,0 +1,14 @@
+.btn {
+  padding: var(--space-sm) var(--space-lg);
+  background: var(--color-secondary);
+  color: var(--color-dark);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  transition: var(--transition-base);
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
