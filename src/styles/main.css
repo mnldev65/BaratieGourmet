@@ -96,3 +96,21 @@ nav {
 .buttonSettings {
     width: 40px;
 }
+
+@media (max-width:768px) {
+    header {
+        padding: 20px 30px;
+    }
+
+    .titulo {
+        font-size: 1.5rem;
+    }
+
+    .navBar {
+        left: -390px;
+    }
+
+    .navBar.navBar.open {
+        left: 0;
+    }
+}
