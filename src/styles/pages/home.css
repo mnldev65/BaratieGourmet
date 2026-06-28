@@ -127,6 +127,86 @@
   transform: translateY(-1px);
 }
 
+.Nossa-História {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-gray-light);
+  padding: 40px 0;
+}
+
+.historia-titulo {
+  font-size: 3.5rem;
+  padding: 40px 0;
+}
+
+.nossa-historia-escolha {
+  display: flex;
+  gap: 30px;
+}
+
+.botoes-hitoria {
+  border: solid 3px var(--color-primary);
+  border-radius: 4px;
+  padding: 5px 15px;
+}
+
+.botoes-hitoria:hover {
+  background-color: var(--color-primary);
+  color: var(--color-gray-light);
+  transition: 0.5s ease-in-out;
+}
+
+.container {
+  display: flex;
+  gap: 40px;
+  margin-top: 45px;
+  align-items: center;
+}
+
+.container.oculto {
+  display: none;
+}
+
+.video-container {
+  width: 40%;
+  border: none;
+  border-radius: 8px;
+}
+
+.container-describe {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-about-me-h2 {
+  margin-bottom: 32px;
+}
+
+.container-about-me-p {
+  margin-bottom: 14px;
+}
+
+.container-about-me-p b,
+.li-container b {
+  color: var(--color-ter);
+}
+
+.ul-container {
+  list-style-type: disc; 
+  padding-left: 40px; 
+  margin-bottom: 20px;
+}
+
+.li-container {
+  margin-bottom: 8px;
+}
+
+.li-container::marker {
+  color: var(--color-ter);
+  font-size: 1.2rem;
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -138,10 +218,11 @@
   }
 }
 
+
 @media (max-width:768px) {
     .hero-section {
         height: 100vh;
-        background-image: url("../../assets/images/hero/chat.png");
+        background-image: url("../../assets/images/hero/mobile-banner.png");
     }
     
     .hero-title {
@@ -151,5 +232,29 @@
 
     .hero-subtitle {
         font-size: 1.4rem;
+    }
+
+    .historia-titulo {
+      font-size: 2.5rem;
+    }
+
+    .nossa-historia-escolha {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      padding: 0 20px;
+    }
+
+    .container-describe {
+      order: 1;
+    }
+
+    .video-container {
+      order: 2;
+      width: 90%;
     }
 }

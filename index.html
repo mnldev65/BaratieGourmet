@@ -23,13 +23,34 @@
     <nav>
       <ul class="navBar">
         <h2 class="sessoes-navBar-h2">configuração</h2>
-        <li class="sessoes-navBar">Home</li>
-        <li class="sessoes-navBar">Cardápio digital</li>
-        <li class="sessoes-navBar">Reservas online</li>
-        <li class="sessoes-navBar">Localização</li>
-        <li class="sessoes-navBar">Contato</li>
-        <li class="sessoes-navBar">Delivery</li>
-        <li class="sessoes-navBar">Programa de fidelidade</li>
+        <li class="sessoes-navBar">
+          <a href="index.html">
+            Home
+          </a>
+        </li>
+
+        <li class="sessoes-navBar">
+          <a href="./src/pages/Home/sections/cardapio.html">
+            Cardápio digital
+          </a>
+        </li>
+
+        <li class="sessoes-navBar">
+          <a href="">Reservas online</a>
+        </li>
+
+        <li class="sessoes-navBar">
+          <a href="">Localização</a>
+        </li>
+        <li class="sessoes-navBar">
+          <a href="">Contato</a>
+        </li>
+        <li class="sessoes-navBar">
+          <a href="">Delivery</a>
+        </li>
+        <li class="sessoes-navBar">
+          <a href="">Programa de fidelidade</a>
+        </li>
       </ul>
     </nav>
 
@@ -55,10 +76,121 @@
     </section>
 
     <section class="Nossa-História">
-      <h1>Nossa História</h1>
-      <p>
+      <h1 class="historia-titulo">Nossa História</h1>
 
-      </p>
+      <div class="nossa-historia-escolha">
+        <button class="botoes-hitoria" id="historia-btn">HISTÓRIA</button>
+        <button class="botoes-hitoria" id="conceito-btn">CONCEITO</button>
+        <button class="botoes-hitoria" id="diferencial-btn">DIFERENCIAL</button>
+        <button class="botoes-hitoria" id="filosofia-btn">FILOSOFIA</button>
+        <button class="botoes-hitoria" id="verTudo-btn">VER TUDO</button>
+      </div>
+      
+      <div class="container">
+        <video 
+          src="./src/assets/videos/restaurante.mp4" 
+          autoplay 
+          muted 
+          loop 
+          disablePictureInPicture 
+          playsinline          
+          preload="metadata"
+          class="video-container">
+        </video>
+        <div class="container-describe">
+          <h2 class="container-about-me-h2">01. A PAIXÃO pela culinária:</h2>
+          <p class="container-about-me-p">
+            Eu não vim de família de restauranteiros. Vim de família de pescadores. Meu avô me ensinou que o mar tem seus segredos, e só quem respeita consegue extrair o melhor dele.
+          </p>
+          <p class="container-about-me-p">
+            Passei anos estudando gastronomia na França, mas nunca esqueci de onde vim. Cada prato que sirvo aqui é uma homenagem: ao mar que me criou, e à técnica que me lapidou.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <video 
+          src="./src/assets/videos/comida2.mp4" 
+          autoplay 
+          muted 
+          loop 
+          disablePictureInPicture 
+          playsinline        
+          preload="metadata"
+          class="video-container">
+        </video>
+        <div class="container-describe">
+          <h2 class="container-about-me-h2">02. O CONCEITO do restaurante:</h2>
+          <p class="container-about-me-p">
+            O Baratie Gourmet não é só um restaurante. É onde duas paixões se encontram:
+          </p>
+          <ul class="ul-container">
+            <li class="li-container">A <b>rusticidade honesta</b> dos frutos do mar frescos</li>
+            <li class="li-container">A <b>sofisticação refinada</b> da alta gastronomia francesa</li>
+          </ul>
+          <p class="container-about-me-p">
+            Aqui você não vem só comer. Você vem <b>viver uma experiência</b>.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <video 
+          src="./src/assets/videos/comida.mp4" 
+          autoplay 
+          muted 
+          loop 
+          disablePictureInPicture 
+          playsinline          
+          preload="metadata"
+          class="video-container">
+        </video>
+        <div class="container-describe">
+          <h2 class="container-about-me-h2">03. O DIFERENCIAL:</h2>
+          <p class="container-about-me-p">
+            Nosso cardápio muda com as marés e as estações.
+          </p>
+          <p class="container-about-me-p">
+            Trabalhamos apenas com fornecedores locais que eu conheço pessoalmente. Se o mar não deu lagosta hoje, você não vai encontrar lagosta congelada no meu cardápio.
+          </p>
+          <p class="container-about-me-p">
+            <b>
+              Frescor absoluto. Sem compromisso.
+            </b>
+          </p>
+        </div>
+      </div>
+      
+
+      <div class="container">
+        <video 
+          src="./src/assets/videos/cozinhar.mp4" 
+          autoplay 
+          muted 
+          loop 
+          disablePictureInPicture 
+          playsinline          
+          preload="metadata"
+          class="video-container">
+        </video>
+        <div class="container-describe">
+          <h2 class="container-about-me-h2">04. A FILOSOFIA:</h2>
+          <p class="container-about-me-p">
+            Cada prato conta uma história. Cada ingrediente tem um propósito.
+          </p>
+          <p class="container-about-me-p">
+            Não acredito em desperdício. Não acredito em pressa.
+            <b>Acredito em respeito:</b>
+          </p>
+          <ul class="ul-container">
+            <li class="li-container">Ao ingrediente</li>
+            <li class="li-container">Ao cliente</li>
+            <li class="li-container">À arte de cozinhar</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <section class=""></section>
@@ -81,5 +213,5 @@
   </footer>
 </body>
 <script type="module" src="./src/main.js"></script>
-
+<script src="./src/js/home.js"></script>
 </html>
