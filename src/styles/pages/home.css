@@ -207,6 +207,142 @@
   font-size: 1.2rem;
 }
 
+.destaque-section {
+  background-color: var(--color-gray-light);
+}
+
+.titulo-destaque-section {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
+.titulo-destaque-section::after {
+  content: "";
+  display: block;
+  width: 110%;      
+  height: 3px;
+  border: none;
+  border-radius: 5px;     
+  background: var(--color-ter);
+  margin-top: 8px;
+  
+}
+
+.container-destaque {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+}
+
+.cards {
+  background-color: var(--color-light);
+  width: 20%;
+  border: none;
+  border-radius: 9px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 6px 20px rgba(11, 11, 11, 0.7);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.photo-card {
+  height: 300px;
+  width: 100%;
+  border: none;
+  display: block;
+  flex-shrink: 0;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+.categoria  {
+  display: inline-block;
+  padding: 6px 16px;
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid var(--color-ter);
+  margin: 0;
+}
+
+.categoria::after {
+  content: "";
+  display: block;
+  width: 100%;      
+  height: 3px;
+  border: none;
+  border-radius: 5px;     
+  background: var(--color-accent);
+  margin-top: 5px;
+}
+
+.title-card {
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+#cremeBrulee {
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
+.describe-card {
+  font-family: var(--font-primary);
+  font-size: 0.95rem;
+  color: var(--color-gray);
+  line-height: 1.6;
+  margin: 10px 0;
+  min-height: 48px;
+  padding: 15px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.price-card {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-green);
+  margin: 8px 0;
+  display: block;
+}
+
+.btn-card {
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 12px;
+  margin-top: 5px;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 8px;
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -256,5 +392,25 @@
     .video-container {
       order: 2;
       width: 90%;
+    }
+
+    .titulo-destaque-section {
+      font-size: 2rem;
+    }
+    
+    .titulo-destaque-section::after {
+      width: 70%;
+    }
+
+    .container-destaque {
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .cards {
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      margin-bottom: 20px;
     }
 }
