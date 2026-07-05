@@ -230,7 +230,6 @@
   border-radius: 5px;     
   background: var(--color-ter);
   margin-top: 8px;
-  
 }
 
 .container-destaque {
@@ -341,6 +340,63 @@
   padding: 5px 20px;
   border: none;
   border-radius: 8px;
+}
+
+.depoimentos {
+  background-color: var(--color-gray-light);
+}
+
+.titulo-depoimentos {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  padding-top: 64px;
+  margin-bottom: 64px;
+  margin-left: 30px;
+}
+
+.titulo-depoimentos::after {
+  content: "";
+  display: block;
+  width: 49%;      
+  height: 3px;
+  border: none;
+  border-radius: 5px;     
+  background: var(--color-ter);
+  margin-top: 8px;
+}
+
+.clientes {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-bottom: 32px;
+}
+
+.nomeFoto {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+}
+
+.img-cliente {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 100px;
+}
+
+.colunaNomeNota {
+  display: flex;
+  flex-direction: column;
+}
+
+.nome-cliente {
+  font-weight: 700;
+}
+
+.depoimento-cliente {
+  margin-top: 16px;
 }
 
 @keyframes fadeInUp {
